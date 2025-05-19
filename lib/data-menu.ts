@@ -1,4 +1,5 @@
 import type { Category, Item, Size, Option } from "./type";
+
 export const categories: Category[] = [
   {
     id: "appetizers",
@@ -10,7 +11,7 @@ export const categories: Category[] = [
         description: "Freshly baked bread with garlic butter and herbs.",
         price: 5.99,
         category: "appetizers",
-        image: "/images/aaptiz bread.img",
+        image: "/images/aaptiz bread.jpg",
       },
       {
         id: "app2",
@@ -18,7 +19,7 @@ export const categories: Category[] = [
         description: "Golden fried mozzarella sticks served with marinara.",
         price: 7.99,
         category: "appetizers",
-        image: "/images/apptiz m-stick.img",
+        image: "/images/apptiz m-stick.jpg",
       },
       {
         id: "app3",
@@ -26,7 +27,7 @@ export const categories: Category[] = [
         description: "Crispy chicken wings tossed in your choice of sauce.",
         price: 9.99,
         category: "appetizers",
-        image: "/images/apptiz chekn wing.img",
+        image: "/images/apptiz chekn wing.jpg",
         options: [
           { id: "wing-buffalo", name: "Buffalo Sauce", price: 0 },
           { id: "wing-bbq", name: "BBQ Sauce", price: 0 },
@@ -46,7 +47,7 @@ export const categories: Category[] = [
           "Juicy beef patty with lettuce, tomato, onion, and our special sauce on a brioche bun.",
         price: 12.99,
         category: "main-courses",
-        image: "/images/apptiz burger.img",
+        image: "/images/apptiz burger.jpg",
       },
       {
         id: "main2",
@@ -55,7 +56,7 @@ export const categories: Category[] = [
           "Traditional pizza with tomato sauce, fresh mozzarella, and basil.",
         price: 14.99,
         category: "main-courses",
-        image: "/images/apptiz pizza.img",
+        image: "/images/apptiz pizza.jpg",
         sizes: [
           { id: "pizza-small", name: 'Small (10")', price: 14.99 },
           { id: "pizza-medium", name: 'Medium (14")', price: 18.99 },
@@ -69,7 +70,7 @@ export const categories: Category[] = [
           "Fresh salmon fillet grilled to perfection, served with seasonal vegetables and rice.",
         price: 18.99,
         category: "main-courses",
-        image: "/images/apptiz grilled.img",
+        image: "/images/apptiz grilled.jpg",
       },
       {
         id: "main4",
@@ -78,7 +79,7 @@ export const categories: Category[] = [
           "Fettuccine pasta in a creamy Alfredo sauce with parmesan cheese.",
         price: 13.99,
         category: "main-courses",
-        image: "/images/apptiz pasta.img",
+        image: "/images/apptiz chesecake.jpg ",
       },
     ],
   },
@@ -88,52 +89,87 @@ export const categories: Category[] = [
     items: [
       {
         id: "dessert1",
-        name: "Roasted Chicken",
+        name: "Tiramisu",
         description:
-          "roasted chicken wings with herbs well served with vegetables.",
+          "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream.",
         price: 7.99,
         category: "desserts",
-        image: "/images/apptiz tiramis.img",
+        image: "/images/cake-1.jpg",
       },
       {
         id: "dessert2",
-        name: "Club Sandwich",
+        name: "Cheesecake",
         description:
-          "club sandwich with cheese cucumber tomato smoked salami served with french fries.",
+          "Creamy New York style cheesecake with a graham cracker crust and berry compote.",
         price: 6.99,
         category: "desserts",
-        image: "/images/apptiz chesecake.img",
+        image: "/images/premium-cake.jpg ",
       },
       {
         id: "dessert3",
-        name: "Crumbed Fish",
+        name: "Chocolate Lava Cake",
         description:
-          "close crumbed fish sticks served white plate with lemon lettuce leaves tomatosauce vert.",
+          "Warm chocolate cake with a molten center, served with vanilla ice cream.",
         price: 8.99,
         category: "desserts",
-        image: "/images/apptiz crumbed-fish-sticks.img ",
+        image: "/images/oreo-cheesecake.jpg ",
+      },
+    ],
+  },
+  {
+    id: "special-dishes",
+    name: "Special Dishes",
+    items: [
+      {
+        id: "special1",
+        name: "Fried Chicken",
+        description: "Crispy fried chicken slices mixed with bell pepper.",
+        price: 14.99,
+        category: "special-dishes",
+        image: "/images/fried-chicken.jpg",
+      },
+      {
+        id: "special2",
+        name: "Tortilla Wraps",
+        description: "Tortilla wraps with meat and fresh vegetables.",
+        price: 12.99,
+        category: "special-dishes",
+        image: "/images/tortilla-wraps-with-meat-fresh-vegetables.jpg ",
+        options: [
+          { id: "wrap-beef", name: "Beef", price: 0 },
+          { id: "wrap-chicken", name: "Chicken", price: 0 },
+        ],
+      },
+      {
+        id: "special3",
+        name: "Falafel Plate",
+        description:
+          "Falafel with hummus and pita, traditional Middle Eastern dish.",
+        price: 11.49,
+        category: "special-dishes",
+        image: "/images/farabic-dishes.jpg ",
       },
     ],
   },
   {
     id: "beverages",
-    name: "Special Dishes",
+    name: "Beverages",
     items: [
       {
         id: "bev1",
-        name: "Fried Chicken",
-        description: "fried chicken slices mixed with bell pepper.",
+        name: "Soft Drinks",
+        description: "Your choice of cola, lemon-lime, or root beer.",
         price: 2.99,
         category: "beverages",
-        image: "/images/fried-chicken.avif",
+        image: "/images/premium_photo.jpg ",
       },
       {
         id: "bev2",
-        name: "Tortilla",
-        description: "tortilla wraps with meat fresh vegetables.",
+        name: "Iced Tea",
+        description: "Freshly brewed iced tea.",
         price: 2.99,
         category: "beverages",
-        image: "/images/tortilla-wraps-with-meat-fresh-vegetables.avif",
+        image: "/images/iced-tea.jpg ",
         options: [
           { id: "tea-sweet", name: "Sweet", price: 0 },
           { id: "tea-unsweet", name: "Unsweet", price: 0 },
@@ -141,15 +177,16 @@ export const categories: Category[] = [
       },
       {
         id: "bev3",
-        name: "Falafel",
-        description: "falafel hummus pita middle eastern arabic dishes.",
+        name: "Coffee",
+        description: "Premium coffee, served cold.",
         price: 2.49,
         category: "beverages",
-        image: "/images/farabic-dishes.avif",
+        image: "/images/iced-coffee.jpg ",
       },
     ],
   },
 ];
+
 export function findItemById(id: string): Item | undefined {
   for (const category of categories) {
     const item = category.items.find((item) => item.id === id);
