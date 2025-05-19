@@ -12,7 +12,13 @@ import { Label } from "@/components/ui/label";
 import { findItemById } from "@/lib/data-menu";
 import { ChevronLeft, Plus, Minus } from "lucide-react";
 
-export default function MenuItemPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function MenuItemPage({ params }: PageProps) {
   const router = useRouter();
   const { addItem } = useCart();
   const item = findItemById(params.id);
